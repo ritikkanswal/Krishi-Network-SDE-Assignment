@@ -15,6 +15,8 @@ sys.path.append("..")
 from utils.shortest_distance import shortest_distance
 IST = pytz.timezone('Asia/Kolkata')
 
+def home():
+    return render_template("index.html")
 def post():
     Message=request.args.get('text')
     lat = request.args.get('lat')
