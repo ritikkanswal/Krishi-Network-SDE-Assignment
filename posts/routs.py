@@ -6,3 +6,4 @@ site=Blueprint('site',__name__)
 
 site.route("/post") (post)
 site.route("/nearby") (nearby)
+site.route("/get") (get)
