@@ -1,5 +1,5 @@
 from flask import Blueprint
-from .controller import post,nearby
+from .controller import post,nearby,get
 
 site=Blueprint('site',__name__)
 
