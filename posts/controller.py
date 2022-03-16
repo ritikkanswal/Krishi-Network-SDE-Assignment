@@ -61,7 +61,7 @@ def nearby():
         l.append(x.id),l.append(lat2),l.append(lon2),l.append(dis),l.append(text)
 
         prev=str(x.date_created.strftime('%Y-%m-%d %H:%M:%S'))
-        curr=str(datetime.now(IST).strftime('%Y-%m-%d %H:%M:%S'))
+        curr=str(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         lastseen=timeago.format(prev,curr)
         l.append(lastseen)
         lat_lon_dist.append(l)
